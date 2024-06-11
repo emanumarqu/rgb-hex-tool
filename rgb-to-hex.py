@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 
+# Note
+print('Enter numbers like this:')
+print('rgb X Y Z')
+print('#XYZABC' + '\n')
+
 # Conversions
 def rgb_to_hex(rgb):
     res = [int(i) for i in rgb.split() if i.isdigit()]
