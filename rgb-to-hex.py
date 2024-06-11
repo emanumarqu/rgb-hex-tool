@@ -2,7 +2,14 @@
 
 # Conversions
 def rgb_to_hex(rgb):
-    print("...")
+    res = []
+    x=rgb.split()
+    for i in x:
+        print(i)
+        if i.isnumeric():
+            res.append(int(i))
+    print(res)
+    print('-')
 
 def hex_to_rgb(hex):
     h = hex.lstrip('#')
@@ -16,7 +23,7 @@ lines = f.readlines()
 for line in lines:
     if line[0:3] == 'rgb':
         rgb_to_hex(line.strip())
-    elif line.strip(): 
-        hex_to_rgb(line.strip())
+    # elif line.strip(): 
+        # hex_to_rgb(line.strip())
 
 # Display converted values
